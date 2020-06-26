@@ -1,17 +1,13 @@
 import React from 'react';
-import { Dimensions, StyleSheet, Text, View, SafeAreaView } from 'react-native';
+import { StyleSheet, View, SafeAreaView } from 'react-native';
+import { useDimensions, useDeviceOrientation } from '@react-native-community/hooks'
+import WelcomeScreen from './app/screens/WelcomeScreen';
+import ViewImageScreen from './app/screens/ViewImageScreen';
+
 
 export default function App() {
-  console.log(Dimensions.get('screen'))
-  return (
-    <SafeAreaView style={styles.container}>
-      <View style={{
-        backgroundColor: "dodgerblue",
-        width: "50%",
-        height: 70,
-      }}></View>
-    </SafeAreaView>
-  );
+  const { landscape } = useDeviceOrientation();
+  return <ViewImageScreen />
 }
 
 const styles = StyleSheet.create({
