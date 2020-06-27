@@ -6,10 +6,11 @@ import ViewImageScreen from './app/screens/ViewImageScreen';
 
 import Card from "./app/components/Card";
 import ListingDetailsScreen from './app/screens/ListingDetailsScreen';
+import MessagesScreen from './app/screens/MessagesScreen';
 
 export default function App() {
   const { landscape } = useDeviceOrientation();
-  return <ListingDetailsScreen></ListingDetailsScreen>
+  return <MessagesScreen />
 }
 
 const styles = StyleSheet.create({
