@@ -4,10 +4,12 @@ import { useDimensions, useDeviceOrientation } from '@react-native-community/hoo
 import WelcomeScreen from './app/screens/WelcomeScreen';
 import ViewImageScreen from './app/screens/ViewImageScreen';
 
+import Card from "./app/components/Card";
+import ListingDetailsScreen from './app/screens/ListingDetailsScreen';
 
 export default function App() {
   const { landscape } = useDeviceOrientation();
-  return <ViewImageScreen />
+  return <ListingDetailsScreen></ListingDetailsScreen>
 }
 
 const styles = StyleSheet.create({
