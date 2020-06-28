@@ -10,7 +10,7 @@
   "dependencies": {
     "@react-native-community/hooks": "^2.6.0",
     "expo": "~37.0.3",
-    "expo-constants": "^9.1.1",
+    "expo-constants": "^9.0.0",
     "formik": "^2.1.4",
     "logkitty": "^0.7.1",
     "react": "~16.9.0",
