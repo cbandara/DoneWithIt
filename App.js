@@ -1,16 +1,14 @@
-import React from 'react';
-import { StyleSheet, View, SafeAreaView } from 'react-native';
-import { useDimensions, useDeviceOrientation } from '@react-native-community/hooks'
-import WelcomeScreen from './app/screens/WelcomeScreen';
-import ViewImageScreen from './app/screens/ViewImageScreen';
+import React, { useState } from 'react';
+import { StyleSheet, View, TextInput, Text, Switch } from 'react-native';
 
-import Card from "./app/components/Card";
-import ListingDetailsScreen from './app/screens/ListingDetailsScreen';
-import MessagesScreen from './app/screens/MessagesScreen';
+import Screen from "./app/components/Screen";
+import LoginScreen from './app/screens/LoginScreen';
+
 
 export default function App() {
-  const { landscape } = useDeviceOrientation();
-  return <MessagesScreen />
+  const [category, setCategory] = useState();
+
+  return <LoginScreen></LoginScreen>
 }
 
 const styles = StyleSheet.create({
